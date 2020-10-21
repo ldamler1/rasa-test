@@ -1,0 +1,52 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yeah
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: DisputeInitiation
+  examples: |
+    - I would like to initiate a dispute
+    - there is an incorrect charge on my account
+    - dispute initiation
+    - I would like to dispute a charge
+- intent: DisputeInitiation-FindTransaction
+  examples: |
+    - a [$9](transaction_amount) charge on [december 12th](transaction_date)
+    - [10/22/2020](transaction_date), [$15](transaction_amount)
+    - on [April 1st 2020](transaction_date) I made a [3](transaction_amount) purchase
+    - on [May 1st 2019](transaction_date) I made a [4](transaction_amount) purchase
+    - a [$9](transaction_amount) charge on May 4th
+    - [10/10/2020](transaction_date), [$20](transaction_amount)
+    - a [$9](transaction_amount) charge on [April 10th](transaction_date)
+    - [1/4/2018](transaction_date), [$25](transaction_amount)
+    - a [$10](transaction_amount) charge on [November 1st](transaction_date)[November 1st](transaction_date)
